@@ -14,6 +14,7 @@ public class CreateCustomerAPI  extends BaseTest{
 
 		
 
+	//sample comment
 		Response response = given().auth().basic(config.getProperty("validSecretKey"), "")
 		.formParam("email", data.get("email")).formParam("description", data.get("description"))
 		.post(config.getProperty("customerAPIEndPoint"));
